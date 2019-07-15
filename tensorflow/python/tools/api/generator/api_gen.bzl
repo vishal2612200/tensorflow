@@ -106,6 +106,7 @@ def gen_api_init_files(
         tools = [":" + api_gen_binary_target],
         visibility = [
             "//tensorflow:__pkg__",
+            "//tensorflow:__subpackages__",
             "//tensorflow/tools/api/tests:__pkg__",
         ],
     )
